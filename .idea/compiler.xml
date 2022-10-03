@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="small-spring-step-02-merge" />
+        <module name="small-spring-step-05" />
         <module name="small-spring-step-02" />
         <module name="small-spring-step-01" />
         <module name="small-spring-step-04" />
@@ -20,6 +21,7 @@
       <module name="small-spring-step-02-merge (1)" target="8" />
       <module name="small-spring-step-03" target="8" />
       <module name="small-spring-step-04" target="8" />
+      <module name="small-spring-step-05" target="8" />
       <module name="untitled" target="8" />
     </bytecodeTargetLevel>
   </component>
