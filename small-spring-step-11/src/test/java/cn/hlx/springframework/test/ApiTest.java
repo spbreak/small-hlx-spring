@@ -36,6 +36,23 @@ public class ApiTest {
     }
     
     @Test
+    public void test_start_try_finally() {
+        System.out.println("test_start_try_finally:" + test_try_finally());
+    }
+    
+    public int test_try_finally() {
+        int i = 1;
+        try {
+            i ++; 
+            System.out.println("try:" + i);
+            return i;
+        } finally {
+            i ++;
+            System.out.println("finally:" + i);
+        }        
+    }
+    
+    @Test
     public void test_dynamic() {
         // 目标对象
         IUserService userService = new UserService();
@@ -48,7 +65,7 @@ public class ApiTest {
         // 代理对象(JdkDynamicAopProxy)
         IUserService proxy_jdk = (IUserService) new JdkDynamicAopProxy(advisedSupport).getProxy();
         // 测试调用
-        System.out.println("测试结果: " + proxy_jdk.queryUserInfo());
+        System.out.println("测试结果: " + proxy_jdk.queryUserInfo() + "\r\n");
         
         // 代理对象(Cglib2AopProxy)
         IUserService proxy_cglib = (IUserService) new Cglib2AopProxy(advisedSupport).getProxy();
