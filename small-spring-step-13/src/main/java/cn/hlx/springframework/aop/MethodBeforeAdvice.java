@@ -24,4 +24,5 @@ public interface MethodBeforeAdvice extends BeforeAdvice {
      *                   will be wrapped as a runtime exception.
      */
     void before(Method method, Object[] args, Object target) throws Throwable;
+    
 }

@@ -22,4 +22,5 @@ public interface BeanFactoryPostProcessor {
      * @throws BeansException
      */
     void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException;
+    
 }

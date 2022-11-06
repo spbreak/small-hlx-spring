@@ -16,4 +16,5 @@ public interface ClassFilter {
      * @return whether the advice should apply to the given target class
      */
     boolean matches(Class<?> clazz);
+    
 }

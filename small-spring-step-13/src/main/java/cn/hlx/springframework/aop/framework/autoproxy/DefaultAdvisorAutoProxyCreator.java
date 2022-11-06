@@ -1,6 +1,5 @@
 package cn.hlx.springframework.aop.framework.autoproxy;
 
-
 import cn.hlx.springframework.aop.*;
 import cn.hlx.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor;
 import cn.hlx.springframework.aop.framework.ProxyFactory;
@@ -34,7 +33,8 @@ public class DefaultAdvisorAutoProxyCreator implements InstantiationAwareBeanPos
     
     @Override
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
-       if (isInfrastructureClass(beanClass)) return null;
+        
+        if (isInfrastructureClass(beanClass)) return null;
         
         Collection<AspectJExpressionPointcutAdvisor> advisors = beanFactory.getBeansOfType(AspectJExpressionPointcutAdvisor.class).values();
         
@@ -75,4 +75,5 @@ public class DefaultAdvisorAutoProxyCreator implements InstantiationAwareBeanPos
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         return bean;
     }
+    
 }

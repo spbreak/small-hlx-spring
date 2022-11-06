@@ -25,4 +25,5 @@ public interface Pointcut {
      * @return the MethodMatcher (never <code>null</code>)
      */
     MethodMatcher getMethodMatcher();
+    
 }

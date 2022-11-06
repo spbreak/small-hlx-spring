@@ -18,4 +18,5 @@ public class BeanReference {
     public String getBeanName() {
         return beanName;
     }
+    
 }

@@ -22,4 +22,5 @@ public interface Advisor {
      * @see BeforeAdvice
      */
     Advice getAdvice();    
+    
 }
