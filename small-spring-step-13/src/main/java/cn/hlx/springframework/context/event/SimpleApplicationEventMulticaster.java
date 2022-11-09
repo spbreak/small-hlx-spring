@@ -24,4 +24,5 @@ public class SimpleApplicationEventMulticaster extends AbstractApplicationEventM
             listener.onApplicationEvent(event);
         }
     }
+    
 }

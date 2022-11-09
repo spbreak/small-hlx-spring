@@ -7,7 +7,7 @@ package cn.hlx.springframework.context.event;
  * 
  * 
  */
-public class ContextRefreshedEvent extends ApplicationContextEvent {
+public class ContextRefreshedEvent extends ApplicationContextEvent{
     /**
      * Constructs a prototypical Event.
      *
@@ -17,4 +17,5 @@ public class ContextRefreshedEvent extends ApplicationContextEvent {
     public ContextRefreshedEvent(Object source) {
         super(source);
     }
+    
 }

@@ -49,6 +49,7 @@ public abstract class AbstractApplicationEventMulticaster implements Application
      * @param event the event to be propagated. Allows for excluding
      * non-matching listeners early, based on cached matching information.
      * @return a Collection of ApplicationListeners
+     * * @see cn.hlx.springframework.context.ApplicationListener
      */
     protected Collection<ApplicationListener> getApplicationListeners(ApplicationEvent event) {
         LinkedList<ApplicationListener> allListeners = new LinkedList<>();
