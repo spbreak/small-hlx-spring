@@ -20,6 +20,7 @@
         <module name="small-spring-step-12" />
         <module name="small-spring-step-04" />
         <module name="small-spring-step-03" />
+        <module name="small-spring-step-14" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -41,6 +42,8 @@
       <module name="small-spring-step-11 (1)" target="8" />
       <module name="small-spring-step-12" target="8" />
       <module name="small-spring-step-13" target="8" />
+      <module name="small-spring-step-13 (1)" target="8" />
+      <module name="small-spring-step-14" target="8" />
       <module name="untitled" target="8" />
     </bytecodeTargetLevel>
   </component>
