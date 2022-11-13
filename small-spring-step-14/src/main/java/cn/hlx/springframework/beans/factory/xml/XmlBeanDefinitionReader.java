@@ -128,7 +128,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
             }
             // 注册 BeanDefinition
             getRegistry().registerBeanDefinition(beanName, beanDefinition);
-        }        
+        }
     }
     
     private void scanPackage(String scanPath) {
