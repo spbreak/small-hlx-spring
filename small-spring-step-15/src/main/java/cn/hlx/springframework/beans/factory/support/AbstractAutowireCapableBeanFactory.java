@@ -34,9 +34,9 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
             if (null != bean) {
                 return bean;
             }
-            // 实例化 Bean
+            // 实例化 Bean 
             bean = createBeanInstance(beanDefinition, beanName, args);
-            // 实例化后判断
+            // 实例化后判断 (Bean 实例化后对于返回 false 的对象，不在执行后续设置 Bean 对象属性的操作)
             boolean continueWithPropertyPopulation = applyBeanPostProcessorsAfterInstantiation(beanName, bean);
             if (!continueWithPropertyPopulation) {
                 return bean;
